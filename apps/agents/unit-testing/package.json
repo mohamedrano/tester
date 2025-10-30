@@ -1,0 +1,28 @@
+{
+  "name": "@multi-agent/unit-testing-agent",
+  "version": "0.1.0",
+  "description": "Automated unit testing agent leveraging property tests and smart mocks.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@multi-agent/agent-framework": "0.1.0",
+    "@multi-agent/shared-types": "0.1.0",
+    "fast-check": "3.17.1",
+    "ts-mockito": "2.6.1"
+  },
+  "devDependencies": {
+    "vitest": "1.6.0"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "@multi-agent/dashboard",
+  "version": "0.1.0",
+  "description": "CLI dashboard that renders the consolidated testing reports.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@multi-agent/shared-types": "0.1.0"
+  },
+  "devDependencies": {
+    "vitest": "1.6.0"
+  }
+}
