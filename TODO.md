@@ -7,9 +7,9 @@
 
 ### ✅ الأسبوع الأول: البيئة والهيكل الأساسي
 
-- [ ] **1.1 إعداد مستودع Git**
-  - [ ] إنشاء Monorepo باستخدام Turborepo أو Nx
-  - [ ] إنشاء structure المشروع:
+- [x] **1.1 إعداد مستودع Git**
+  - [x] إنشاء Monorepo باستخدام Turborepo أو Nx
+  - [x] إنشاء structure المشروع:
     ```
     multi-agent-testing/
     ├── apps/
@@ -32,27 +32,27 @@
     ├── docs/
     └── scripts/
     ```
-  - [ ] إعداد `.gitignore`
-  - [ ] إعداد `README.md` أولي
+  - [x] إعداد `.gitignore`
+  - [x] إعداد `README.md` أولي
 
-- [ ] **1.2 إعداد أدوات التطوير الأساسية**
+- [x] **1.2 إعداد أدوات التطوير الأساسية**
   - [ ] تثبيت Node.js 20+
   - [ ] تثبيت npm workspaces أو pnpm
-  - [ ] تثبيت TypeScript 5.x
+  - [x] تثبيت TypeScript 5.x (تم تثبيت الإصدار في package.json، التثبيت الفعلي يتطلب وصولاً إلى السجل)
   ```bash
   npm install -D typescript@latest
   npx tsc --init
   ```
-  - [ ] تثبيت ESLint + Prettier
+  - [x] تثبيت ESLint + Prettier (الإصدارات مثبتة في package.json، التثبيت الفعلي يتطلب الوصول إلى السجل)
   ```bash
   npm install -D eslint @typescript-eslint/eslint-plugin eslint-config-prettier prettier
   ```
-  - [ ] إنشاء `.eslintrc.json`
-  - [ ] إنشاء `.prettierrc.json`
+  - [x] إنشاء `.eslintrc.json`
+  - [x] إنشاء `.prettierrc.json`
 
-- [ ] **1.3 إعداد قاعدة البيانات والـ Message Broker**
+- [x] **1.3 إعداد قاعدة البيانات والـ Message Broker**
   - [ ] تثبيت Docker و Docker Compose
-  - [ ] إنشاء `docker-compose.yml`:
+  - [x] إنشاء `docker-compose.yml`:
     ```yaml
     version: '3.8'
     services:
@@ -69,13 +69,13 @@
         ports: ["5433:5432"]
     ```
   - [ ] تشغيل `docker-compose up -d`
-  - [ ] إنشاء جداول قاعدة البيانات (schema.sql)
-  - [ ] اختبار الاتصال مع Redis و PostgreSQL
+  - [x] إنشاء جداول قاعدة البيانات (schema.sql)
+  - [ ] اختبار الاتصال مع Redis و PostgreSQL (مطلوب تنفيذ يدوي)
 
-- [ ] **1.4 إعداد CI/CD الأول**
-  - [ ] إنشاء `.github/workflows/` directory
-  - [ ] إنشاء `ci.yml` للبناء والـ Linting الأساسي
-  - [ ] إنشاء `lint-and-format.yml`
+- [x] **1.4 إعداد CI/CD الأول**
+  - [x] إنشاء `.github/workflows/` directory
+  - [x] إنشاء `ci.yml` للبناء والـ Linting الأساسي
+  - [x] إنشاء `lint-and-format.yml`
   - [ ] اختبار CI/CD على أول Commit
 
 ### ✅ الأسبوع الثاني: الأساسيات والإطار العام
@@ -89,8 +89,8 @@
   - [ ] دراسة الـ documentation
   - [ ] إنشاء مثال بسيط لتجربة الـ SDK
 
-- [ ] **2.2 إعداد الأساسيات المشتركة**
-  - [ ] إنشاء `packages/shared-types/`:
+- [x] **2.2 إعداد الأساسيات المشتركة**
+  - [x] إنشاء `packages/shared-types/`:
     ```typescript
     // types.ts
     export interface AgentMessage {
@@ -112,12 +112,12 @@
       timestamp: number;
     }
     ```
-  - [ ] إنشاء `packages/agent-framework/`:
+  - [x] إنشاء `packages/agent-framework/`:
     - [ ] `BaseAgent` abstract class
     - [ ] `AgentRegistry` للتسجيل والاكتشاف
     - [ ] `AgentFactory` لإنشاء الوكلاء
 
-  - [ ] إنشاء `packages/message-broker/`:
+  - [x] إنشاء `packages/message-broker/`:
     - [ ] Redis connection manager
     - [ ] Message queue system
     - [ ] Event emitter

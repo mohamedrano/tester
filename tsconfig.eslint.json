@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "packages/shared-types/src/**/*.ts",
+    "packages/agent-framework/src/**/*.ts",
+    "packages/message-broker/src/**/*.ts"
+  ]
+}

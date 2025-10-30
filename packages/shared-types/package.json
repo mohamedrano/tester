@@ -1,0 +1,19 @@
+{
+  "name": "@multi-agent/shared-types",
+  "version": "0.1.0",
+  "description": "Shared message and reporting types for the multi-agent testing system.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest"
+  }
+}
