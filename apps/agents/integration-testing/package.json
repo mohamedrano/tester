@@ -1,0 +1,27 @@
+{
+  "name": "@multi-agent/integration-testing-agent",
+  "version": "0.1.0",
+  "description": "Integration testing agent that validates API contracts using MSW simulations.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@multi-agent/agent-framework": "0.1.0",
+    "@multi-agent/shared-types": "0.1.0",
+    "msw": "2.6.0"
+  },
+  "devDependencies": {
+    "vitest": "1.6.0"
+  }
+}

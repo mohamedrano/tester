@@ -3,6 +3,15 @@
   "references": [
     { "path": "packages/shared-types" },
     { "path": "packages/agent-framework" },
-    { "path": "packages/message-broker" }
+    { "path": "packages/message-broker" },
+    { "path": "apps/agents/unit-testing" },
+    { "path": "apps/agents/integration-testing" },
+    { "path": "apps/agents/e2e-testing" },
+    { "path": "apps/agents/security" },
+    { "path": "apps/agents/performance" },
+    { "path": "apps/agents/maintenance" },
+    { "path": "apps/agents/reporting" },
+    { "path": "apps/orchestrator" },
+    { "path": "apps/dashboard" }
   ]
 }
