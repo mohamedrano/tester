@@ -1,0 +1,35 @@
+{
+  "name": "multi-agent-testing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Monorepo scaffolding for an intelligent multi-agent testing system.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "lint": "eslint \"{packages}/**/*.{ts,tsx}\"",
+    "format": "prettier --check .",
+    "format:write": "prettier --write .",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "apps/agents/*"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "6.21.0",
+    "@typescript-eslint/parser": "6.21.0",
+    "@vitest/coverage-v8": "1.6.0",
+    "allure-commandline": "2.29.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "9.1.0",
+    "prettier": "3.3.3",
+    "typescript": "5.6.3",
+    "vitest": "1.6.0"
+  }
+}
