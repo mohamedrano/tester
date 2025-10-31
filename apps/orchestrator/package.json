@@ -17,9 +17,9 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@multi-agent/agent-framework": "0.1.0",
-    "@multi-agent/message-broker": "0.1.0",
-    "@multi-agent/shared-types": "0.1.0"
+    "@multi-agent/agent-framework": "workspace:*",
+    "@multi-agent/message-broker": "workspace:*",
+    "@multi-agent/shared-types": "workspace:*"
   },
   "devDependencies": {
     "vitest": "1.6.0"
