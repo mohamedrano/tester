@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.agent.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}

@@ -1,7 +1,7 @@
 {
-  "name": "@multi-agent/message-broker",
+  "name": "@multi-agent/integration-testing-agent",
   "version": "0.1.0",
-  "description": "Lightweight message broker abstractions for coordinating testing agents.",
+  "description": "Integration testing agent that validates API contracts using MSW simulations.",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
@@ -17,6 +17,11 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@multi-agent/shared-types": "workspace:*"
+    "@multi-agent/agent-framework": "workspace:*",
+    "@multi-agent/shared-types": "workspace:*",
+    "msw": "2.6.0"
+  },
+  "devDependencies": {
+    "vitest": "1.6.0"
   }
 }

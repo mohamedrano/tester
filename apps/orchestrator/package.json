@@ -1,7 +1,7 @@
 {
-  "name": "@multi-agent/message-broker",
+  "name": "@multi-agent/orchestrator",
   "version": "0.1.0",
-  "description": "Lightweight message broker abstractions for coordinating testing agents.",
+  "description": "Coordinates specialized testing agents through the message broker.",
   "license": "MIT",
   "type": "module",
   "main": "dist/index.js",
@@ -17,6 +17,11 @@
     "test": "vitest"
   },
   "dependencies": {
+    "@multi-agent/agent-framework": "workspace:*",
+    "@multi-agent/message-broker": "workspace:*",
     "@multi-agent/shared-types": "workspace:*"
+  },
+  "devDependencies": {
+    "vitest": "1.6.0"
   }
 }
